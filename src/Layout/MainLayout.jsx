@@ -5,8 +5,12 @@ import Navbar from "../Components/Navbar";
 const MainLayout = () => {
     return (
         <div>
-            <Navbar />
-            <Outlet />
+            <div className="fixed top-0 z-50 w-full">
+                <Navbar />
+            </div>
+            <div className="max-h-[calc(100vh-90px)]">
+                <Outlet />
+            </div>
         </div>
     );
 };
