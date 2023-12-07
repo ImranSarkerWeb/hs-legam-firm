@@ -7,26 +7,29 @@ import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { SlCalender } from "react-icons/sl";
 import { GoLink } from "react-icons/go";
+// import Button from "./Button/Button";
+import { useTranslation } from "react-i18next";
 
 const Slider = () => {
-  const [isOpen, setIsopen] = useState(0);
+  // const [isOpen, setIsopen] = useState(0);
   const [isSlideTransitionEnd, setIsSlideTransitionEnd] = useState(false);
+  const { t } = useTranslation();
 
-  console.log(isOpen);
+  // console.log(isOpen);
   const sliderData = [
     {
       id: 1,
-      text: "HS LEGAM Firm",
+      text: `${t('slider.slid1')}`,
       img: "https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/slider-man2.png",
     },
     {
       id: 2,
-      text: "A trustable Law Hub",
+      text: `${t('slider.slid2')}`,
       img: "https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/slider-man.png",
     },
     {
       id: 3,
-      text: "We make your problem easy.",
+      text: `${t('slider.slid3')}`,
       img: "https://demo.casethemes.net/lawsight/wp-content/uploads/2019/03/slider-man3.png",
     },
   ];
@@ -48,18 +51,16 @@ const Slider = () => {
       AOS.refreshHard();
       setIsSlideTransitionEnd(false); // Reset the state
     }
-  }, [isOpen, isSlideTransitionEnd]);
-  // const hadleChange = () => {
-  //     AOS.refresh()
-  // }
+  }, [ isSlideTransitionEnd]);
+
   return (
-    <div className="relative h-screen w-full  ">
-      <div>
+    <div className=" relative h-full w-full  ">
+      <div className="">
         <Swiper
           effect={"fade"}
           spaceBetween={30}
           centeredSlides={true}
-          onSlideChange={() => setIsopen(isOpen + 1)}
+          // onSlideChange={() => setIsopen(isOpen + 1)}
           onSlideChangeTransitionEnd={handleSlideTransitionEnd}
           // onSlideChange={() => hadleChange()}
           autoplay={{
@@ -76,14 +77,14 @@ const Slider = () => {
           {sliderData.map(({ id, text, img }) => (
             <SwiperSlide
               key={id}
-              className="bg-white h-screen flex  items-center justify-center "
+              className="bg-white flex  items-center justify-center "
             >
-              <div className="grid grid-cols-2 h-full">
+              <div className="grid grid-cols-2 justify-center items-center h-full">
                 <div
                   data-aos="fade-right"
                   className="h-screen flex justify-center items-center mt-8"
                 >
-                  <img className=" h-full md:h-[80%]" src={img} alt="" />
+                  <img className=" h-full w-fit md:h-[90%]" src={img} alt="" />
                 </div>
                 <div
                   data-aos="fade-left"
@@ -98,16 +99,16 @@ const Slider = () => {
           ))}
         </Swiper>
       </div>
-      <div className="md:absolute md:left-1/2 md:-bottom-22 md:transform md:-translate-x-1/2 md:-translate-y-1/2 w-full   z-10 grid gap-2 md:gap-0 grid-cols-1 md:grid-cols-3 md:w-[80%] ">
+      <div className="md:mt-0 md:absolute md:left-1/2 md:-bottom-22 md:transform md:-translate-x-1/2 md:-translate-y-1/2 w-full z-10  grid gap-2 md:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-[80%] mx-auto ">
         <div className=" group transition-all duration-500 bg-white hover:bg-black shadow-md  py-12 mb-3  grid grid-cols-3">
           <div className="col-span-1">
             <SlCalender className=" group-hover:shadow-md text-5xl text-primery mx-auto " />
           </div>
           <div className="col-span-2 relative">
             <div>
-              <p className="text-assh text-xl font-bold">Book an</p>
+              <p className="text-assh text-xl font-bold">{t('afterSlider.box1.text1')}</p>
               <p className="text-3xl group-hover:text-white group-hover:underline  font-bold">
-                Appoinment
+              {t('afterSlider.box1.text2')}
               </p>
             </div>
             <span className="absolute -top-10 right-6 scale-0 group-hover:transition-all group-hover:duration-500 group-hover:scale-[1.8]">
@@ -115,15 +116,15 @@ const Slider = () => {
             </span>
           </div>
         </div>
-        <div className=" group transition-all duration-500 bg-black   py-12 mb-3  grid grid-cols-3">
+        <div className=" group transition-all duration-500 bg-black py-12 mb-3  grid grid-cols-3">
           <div className="col-span-1">
             <GoLink className=" shadow-md text-5xl text-primery mx-auto " />
           </div>
           <div className="col-span-2 relative">
             <div>
-              <p className="text-assh text-xl font-bold">Book an</p>
+              <p className="text-assh text-xl font-bold">{t('afterSlider.box2.text1')}</p>
               <p className="text-3xl text-white underline  font-bold">
-                Team member
+              {t('afterSlider.box2.text2')}
               </p>
             </div>
             <div className="absolute -top-10 right-6 transition-all duration-500  scale-[1.8]">
@@ -137,9 +138,9 @@ const Slider = () => {
           </div>
           <div className="col-span-2 relative">
             <div>
-              <p className="text-assh text-xl font-bold">Book an</p>
+              <p className="text-assh text-xl font-bold">{t('afterSlider.box3.text1')}</p>
               <p className="text-3xl group-hover:text-white group-hover:underline  font-bold">
-                Appoinment
+              {t('afterSlider.box3.text2')}
               </p>
             </div>
             <div className="absolute -top-10 right-6 scale-0 group-hover:transition-all group-hover:duration-500 group-hover:scale-[1.8]">
