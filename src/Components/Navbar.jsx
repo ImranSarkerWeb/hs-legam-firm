@@ -27,8 +27,8 @@ const Navbar = () => {
       title: `${t('navber.home')}`,
     },
     {
-      path: "/ga",
-      title: "Home",
+      path: "/about",
+      title: `${t('navber.about')}`,
     },
   ];
 
@@ -61,7 +61,7 @@ const Navbar = () => {
               key={index}
               to={path}
               className={({ isActive }) =>
-                isActive ? "text-black font-semibold isActive " : "font-medium "
+                isActive ? "text-black font-semibold isActive " : " text-black "
               }
             >
               {title}
