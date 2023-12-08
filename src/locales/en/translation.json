@@ -1,6 +1,7 @@
 {
     "navber":{
-        "home" :"Home"
+        "home" :"Home",
+        "about":"About"
     },
     "slider":{
         "slid1":"HS LEGAM Firm",
