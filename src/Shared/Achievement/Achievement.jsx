@@ -55,7 +55,7 @@ const Achievement = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  '>
                 {
                     counter.map((item, index) => (
-                        <div key={item.id} className={`text-center py-10  rounded-md ${getCounterStyle(index)} shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]`}>
+                        <div key={index} className={`text-center py-10  rounded-md ${getCounterStyle(index)} shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]`}>
                             <div>
                                 <CountUp className='text-4xl font-extrabold' delay={2} enableScrollSpy={true} start={0} suffix='+' end={item.count} />
                             </div>

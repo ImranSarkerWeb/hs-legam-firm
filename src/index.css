@@ -2,16 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --main-bg-color: #b7915e;
+}
 .isActive::after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    background: #B7915E;
-    display: block;
-    margin: auto;
-    transition: .5s;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--main-bg-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 .isActive:hover::after {
-    width: 100%;
+  width: 100%;
 }

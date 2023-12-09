@@ -30,12 +30,19 @@ const Navbar = () => {
       path: "/about",
       title: `${t('navber.about')}`,
     },
+    {
+      path:"/team_member",
+      title:`${t('navber.team_member')}`
+    }
   ];
 
   const handleLanguage = (event) => {
     setSelected(event.target.value);
     setLang(event.target.value)
     localStorage.setItem('lang',event.target.value)
+  }
+  const handleClick =()=>{
+    setOpen(false)
   }
 
   return (
@@ -58,6 +65,7 @@ const Navbar = () => {
         >
           {navLinks.map(({ path, title }, index) => (
             <NavLink
+            onClick={handleClick}
               key={index}
               to={path}
               className={({ isActive }) =>

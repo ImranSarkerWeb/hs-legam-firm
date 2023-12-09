@@ -9,7 +9,7 @@ const AboutSection = () => {
         delay: 200,
     });
     return (
-        <div className='w-full my-8 gap-16 place-items-center grid grid-cols-1 md:grid-cols-2  py-0 md:py-8 lg:px-28'>
+        <div className='px-2 w-full my-8 gap-16 place-items-center grid grid-cols-1 md:grid-cols-2  py-0 md:py-8 lg:px-28'>
             <div className='relative' data-aos="fade-right">
                 <img className='h-[550px] rounded-tl-[150px] w-[400px]' src={profileImg} alt="" />
                 <div className=' md:absolute text-center px-8 py-3 -bottom-10 -right-16 bg-primery text-white'>

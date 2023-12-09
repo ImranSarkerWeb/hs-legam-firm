@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Cart.css'
 
-const Cart = ({img,name,fb,lin,twit}) => {
+const Cart = ({img,name,fb,lin,number,email}) => {
     return (
         <div className="card__collection clear-fix">
             {/* <div className="cards cards--two">
@@ -28,8 +28,9 @@ const Cart = ({img,name,fb,lin,twit}) => {
                 <span className="cards--three__circle"></span>
                 <ul className="cards--three__list">
                     <li><Link to={fb}><i className="fab fa-facebook-f"></i></Link></li>
-                    <li><Link to={twit}><i className="fab fa-twitter"></i></Link></li>
-                    <li><Link to={lin} ><i className="fab fa-linkedin-in"></i></Link></li>
+                    <li><Link to={`https://wa.me/${number}`} target='_blank'><i className="fab fa-whatsapp"></i></Link></li>
+                    {/* <li><Link to={lin} ><i className="fab fa-linkedin-in"></i></Link></li> */}
+                    <li><Link to={`mailto:${email}`}  target='_blank'><i className="fa-solid fa-envelope"></i></Link></li>
                 </ul>
             </div>
         </div>
