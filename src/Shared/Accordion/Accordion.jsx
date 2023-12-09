@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import { RiArrowDropDownLine } from 'react-icons/ri'
 import './Accordion.css'
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import AccordionItem from './AccordionItem';
 // const AccordionItem = ({ question, answer, isOpen, onClick }) => {
 //     const contentHeight = useRef();

@@ -1,7 +1,8 @@
 {
     "navber": {
         "home": "হোম",
-        "about":"এবাউট"
+        "about":"এবাউট",
+        "team_member":"দলের সদস্য"
     },
     "slider": {
         "slid1": "হস লাগাম ফার্ম",
