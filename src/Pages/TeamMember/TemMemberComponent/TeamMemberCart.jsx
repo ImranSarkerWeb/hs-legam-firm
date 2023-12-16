@@ -37,7 +37,7 @@ const TeamMemberCart = () => {
         },
     ]
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center bg-assh">
             {
                 data.map(({name,email,facebook,number,imgUrl,id})=>(
                     <Cart key={id} img={imgUrl} name={name} fb={facebook} email={email} number={number} />

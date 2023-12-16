@@ -33,6 +33,10 @@ const Navbar = () => {
     {
       path:"/team_member",
       title:`${t('navber.team_member')}`
+    },
+    {
+      path:"/contact",
+      title:`${t('navber.contact')}`
     }
   ];
 
@@ -54,13 +58,13 @@ const Navbar = () => {
       <span className="block lg:hidden">
         <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
       </span>
-
+      {/* md:w-1/3 lg:w-fit */}
       <div
-        className={`flex flex-col lg:flex-row gap-3  lg:gap-8 transition-all lg:transition-none duration-300 pt-16 lg:pt-0 absolute lg:static top-20  h-[calc(100vh-80px)] lg:h-fit w-full md:w-1/3 lg:w-fit bg-primery  lg:bg-transparent items-center ${isOpen ? " left-0  " : "-left-[10000px]  "
+        className={`flex flex-col  lg:flex-row gap-3  lg:gap-8 transition-all lg:transition-none duration-300 pt-16 lg:pt-0 absolute lg:static top-20  h-[calc(100vh-80px)] lg:h-fit w-full md:w-1/3 lg:w-fit bg-primery  lg:bg-transparent items-center ${isOpen ? " left-0  " : "-left-[10000px]  "
           }`}
       >
         <div
-          className={`flex flex-col lg:flex-row gap-3  lg:gap-8 transition-all lg:transition-none duration-300 pt-16 lg:pt-0 absolute lg:static top-20  h-[calc(100vh-80px)] lg:h-fit w-full md:w-1/3 lg:w-fit bg-gray-400  lg:bg-transparent items-center ${isOpen ? " left-0  " : "-left-[10000px]  "
+          className={`flex flex-col   lg:flex-row gap-3  lg:gap-8 transition-all lg:transition-none duration-300 pt-9 lg:pt-0 absolute top-20   lg:static   h-[calc(100vh-80px)] lg:h-fit w-full  bg-gray-400  lg:bg-transparent items-center ${isOpen ? " left-0  " : "-left-[10000px]  "
             }`}
         >
           {navLinks.map(({ path, title }, index) => (

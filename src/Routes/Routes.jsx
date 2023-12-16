@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import HomePage from "../Pages/HomePage";
 import About from "../Pages/About/About";
 import TeamMember from "../Pages/TeamMember/TeamMember";
+import Contact from "../Pages/Contact/Contact";
 
 //routes will be here
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         {
           path:'/team_member',
           element: <TeamMember />
+        },
+        {
+          path:'/contact',
+          element: <Contact />
         }
       ]
     }

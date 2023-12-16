@@ -2,7 +2,8 @@
     "navber":{
         "home" :"Home",
         "about":"About",
-        "team_member":"Team Member"
+        "team_member":"Team Member",
+        "contact":"Contact"
     },
     "slider":{
         "slid1":"HS LEGAM Firm",
