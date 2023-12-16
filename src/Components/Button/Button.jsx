@@ -2,12 +2,15 @@ import { Link } from 'react-router-dom';
 import './Button.css'
 const Button = ({ href, title }) => {
   return (
-    <div className="button-container-1">
-      <span className="mas">{title}</span>
-      <button id='work' type="button" name="Hover">
-        <Link to={href}>{title}</Link>
-      </button>
-    </div>
+    <nav>
+      <ul>
+        <li className='mx-auto'>
+          <Link to={href}>{title}</Link>
+          {/* {title} */}
+          <span></span><span></span><span></span><span></span>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

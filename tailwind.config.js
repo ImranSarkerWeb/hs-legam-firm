@@ -15,6 +15,7 @@ export default {
       primery : "#B7915E",
       white:'#ffff',
       assh:'#999999',
+      assh_normal:'#F2F4F4',
       black: '#000',
       transparent: '#ffffff00'
     }

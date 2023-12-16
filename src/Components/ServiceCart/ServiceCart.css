@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     /* flex-wrap: wrap; */
-
     justify-content: center;
     .header {
       margin: 0 auto;
