@@ -1,0 +1,90 @@
+{
+    "navber":{
+        "home" :"Home",
+        "about":"About",
+        "team_member":"Team Member",
+        "contact":"Contact"
+    },
+    "slider":{
+        "slid1":"HS LEGAM Firm",
+        "slid2":"A trustable Law Hub",
+        "slid3":"We make your problem easy."
+    },
+    "afterSlider":{
+        "box1":{
+            "text1":"Book an",
+            "text2":"Appoinment"
+        },
+        "box2":{
+            "text1":"Book an",
+            "text2":"Team member"
+        },
+        "box3":{
+            "text1":"Book an",
+            "text2":"Appoinment"
+        }
+    },
+    "services":{
+        "header":{
+            "p":"Services",
+            "h1":"We are here to fight against any violance with",
+            "italic":"experience"
+        },
+        "servicesData":{
+            "box1":{
+                "title":"Family Law",
+                "discription":"Comprehensive legal solutions for family matters, including divorce, child custody, adoption, and domestic relations assistance."
+            },
+            "box2":{
+                "title":"Civil Law",
+                "discription":"Your guide to Civil Law expertise: contracts, disputes, property, and legal advice for individuals/businesses"
+            },
+            "box3":{
+                "title":"Criminal Law",
+                "discription":"Navigate Criminal Law: defense strategies, legal rights, and expert advice for individuals facing criminal charges."
+            },
+            "box4":{
+                "title":"Business Law",
+                "discription":"Business Law insights: Contracts, compliance, and legal support for entrepreneurs, startups, and established businesses."
+            },
+            "box5":{
+                "title":"Education Law",
+                "discription":"Education Law Hub: Advocating for students' rights, school policies, and legal guidance for educational institutions."
+            },
+            "box6":{
+                "title":"Real Estate Law",
+                "discription":"Real Estate Law Center: Navigating property transactions, contracts, and legal support for buyers and sellers."
+            }
+        }
+    },
+    "funFact":{
+        "header":{
+            "p":"Fun fact",
+            "h1":"We feel very proud for our great",
+            "span":"achievement"
+        },
+        "text":{
+            "p1":"Since the introduction of case management, the courts and arbitration tribunals are focusing",
+            "p2":"Joseph Tan of JLex LLC debating the advantages of recovering pure economic loss."
+        },
+        "counter":{
+            "box1":{
+                "count":1825,
+                "text":"Completed works"
+            },
+            "box2":{
+                "count":532,
+                "text":"Satisfied clients"
+            },
+            "box3":{
+                "count":69,
+                "text":"Winning awards"
+            },
+            "box4":{
+                "count":32,
+                "text":"Team members"
+            }
+        }
+    }
+    
+}

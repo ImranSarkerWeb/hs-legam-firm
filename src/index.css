@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --main-bg-color: #b7915e;
+}
+.isActive::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--main-bg-color);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.isActive:hover::after {
+  width: 0%;
+}
+
+a{
+  text-decoration: none !important ;
+  border: none !important ;
+  margin:0px 0px 0px  !important ;
+  padding: 0px 0px 0px 0px !important;
+  background: transparent !important ;
+}
